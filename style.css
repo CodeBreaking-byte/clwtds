@@ -3,104 +3,108 @@
     padding: 0;
     box-sizing: border-box;
 }
-header {
-    /* border: 2px red solid; */
-    /* padding: 1rem; */
-    width: 100%;
-}
-header img {
-    width: 30px;
-    /* border: 2px black solid; */
-    margin: 0rem 1rem ;
-    border-radius: 30px;
+
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-header nav {
-    position: fixed;
-    height: 80px;
-    top:0;
-    background-color: #3A001D;
-    width: 100%;
-    padding: 0.6rem 0rem;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    z-index: 3;
-    justify-content: space-between;
+
+/* Navigation bar CSS */
+
+ul {
+    list-style-position: outside;
 }
 
-header nav a  {
-    color: rgb(254, 52, 134);
-    text-decoration: none;
-}
-li {
-    font-weight: bold;
-    /* border: 2px black solid; */
-    margin: 0.5rem;
+
+.nav-link {
+    color: #D42C70cf !important;
 }
 
-header nav a :hover {
-    transition: all 0.5s ease;
-    color: #e66465;
-    
+.nav-link:hover,
+.active>.nav-link {
+    color: #FE3486 !important;
 }
 
-header nav .navigation {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0.4rem 1rem 0rem 0rem;
-    /* border: 2px #ffff solid; */
-}
-header nav input, header nav label {
-    display: none;
+a{
+    text-align: justify;
 }
 
-/*  media queary  */
+/* logo CSS */
+#logo {
+    width: 57.5px;
+}
 
-@media (max-width:900px) {
-    
-    header nav label {
-        display: block;
+
+/* Poster CSS */
+#banner {
+    background: radial-gradient(rgba(177, 2, 72, 0.85), rgba(177, 2, 72, 0.5)), url('./banner.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 7.5px;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 861px) {
+    .title {
+        font-size: 2.5rem;
     }
-    header nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    header nav .navigation {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        display: block;
-        height: fit-content;
-        padding: 2rem;
-        width: fit-content;
-        background-color: aqua;
-        transition: all 0.5s ease;
-    }
+}
 
-    header nav .navigation a li {
-        background-color: rgb(233, 231, 211);
-        padding: 1rem;
-        border-radius: 30px;
+
+@media only screen and (max-width: 575px) {
+    .title {
+        font-size: 2rem;
     }
-    header nav .menu-btn i {
-        color: #e66465;
-    }
-    header nav .navigation a li:hover {
-        color: rgb(17, 14, 14);
-        background-color: #b9d1c2;
-        transition: all 0.5s ease;
+}
+
+@media only screen and (max-width: 426px) {
+    button.navbar-toggler {
+        padding: 2px 6px;
     }
 
-    #click:checked ~ .menu-btn i:before {
-        content: "\f00d";
-        color: #e66465;
+    h1 {
+        font-size: 2.125rem;
     }
-    #click:checked ~ .navigation {
-        left: 0%;
+    h2 {
+        font-size: 1.55rem;
+    }
+    h3 {
+        font-size: 1.35rem;
+    }
+    h4 {
+        font-size: 1.15rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    #navbarColor03>ul>li.nav-item>a>h5 {
+        margin: 0;
+    }
+    h6 {
+        font-size: 0.875rem;
+    }
+    p {
+        font-size: 0.8875rem;
     }
 }
 
