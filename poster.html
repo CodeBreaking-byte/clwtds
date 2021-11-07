@@ -1,69 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="images/favicon.ico">
+    <title class="title">Poster</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
-    <title>Poster</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
-<body>
-    
+
+<body class="min-vh-100 d-flex flex-column">
+    <!--===== Navigation bar =====-->
     <header>
         <nav>
-            <div class="logo"><a href=""><img
-                        src="./images/logo.jpg" alt=""></a>
-            </div>
+            <nav class="navbar navbar-expand-xl navbar-dark" style="background-color: #3A001D;">
+                <div class="container-lg">
+                    <a class="navbar-brand text-center" target="_blank" href="https://drive.google.com/file/d/1CzF462C1I-XRlQgkVIlVhRAYlGM1me8q/view">
+                        <img src="images/logo.jpg" height="auto" class="d-inline-block align-top" id = "logo" alt="BI">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
             
-            <input type="checkbox" id="click">
-            <label for="click" class="menu-btn" >
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </label>
-
-            <div class="navigation">
-
-                <a href="#">
-                    <li>Home</li>
-                </a>
-                <a href="./appre.html">
-                    <li>Appreciations</li>
-                </a>
-                <a href="./poster.html">
-                    <li>Poster</li>
-                </a>
-
-                <a href="./speaker.html">
-                    <li>Speakers</li>
-                </a>
-
-                <a href="./appre.html#free-register">
-                    <li>Free Register</li>
-                </a>
-                <a href="./appre.html#about-dr-singh">
-                    <li>More About Dr. T. D. Singh</li>
-                </a>
-                <a href="./appre.html#gallery">
-                    <li>Gallery</li>
-                </a>
-                <a href="./appre.html#about-us">
-                    <li>About Us</li>
-                </a>
-            </div>
+                    <div class="collapse navbar-collapse" id="navbarColor03">
+                        <ul class="navbar-nav text-center ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    <h5> Home </h5>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="./appre.html">
+                                    <h5>Appreciations</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item active dropdown">
+                                <a class="nav-link" href="./poster.html">
+                                    <h5>Poster</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./speaker.html">
+                                    <h5>Speakers</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./appre.html#free-register">
+                                    <h5>Free Register</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./appre.html#about-dr-singh">
+                                    <h5>More about Dr. T. D. Singh</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">
+                                    <h5>Gallery</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./appre.html#about-us">
+                                    <h5>About Us</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </nav>
     </header>
+    <!--===== End Navigation bar =====-->
 
+    <!--===== Poster section =====-->
     <section class="poster" id="poster">
-        <div>
-            <h1>Poster</h1>
-            <img src="./images/pic-5.png" alt="">
+        <div id="banner">
+            <div class="container-lg py-4 text-center">
+                <h1 class="py-2">
+                    <i class="bi-file-earmark-image"></i>
+                    Poster
+                </h1>
+            </div>
         </div>
 
+        <main class="container-lg px-0 flex-grow-1">
+            <div class="m-4">
+                <div class="d-flex flex-wrap justify-content-center my-2">
+                    <a href="images/pic-5.png" type="button" class="btn btn-outline-info m-2" download>
+                        <h5 class="text-center my-1"><i class="bi-download"></i>&ensp;Download Poster SQ(1.0MB)</h5>
+                    </a>
+                    <a href="images/pic-5.png" type="button" class="btn btn-outline-info m-2" download>
+                        <h5 class="text-center my-1"><i class="bi-download"></i>&ensp;Download Poster HQ(3.0MB)</h5>
+                    </a>
+                </div>
+                <figure class="text-center">
+                    <img src="images/pic-5.png" alt="Poster" style="width: 95%; max-width: 720px;">
+                </figure>
+            </div>
+        </main>
     </section>
 
-
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
