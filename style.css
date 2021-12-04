@@ -480,6 +480,17 @@ speaker section
     margin: 0 auto;
 }
 
+/* .speaker-name {
+    border: #00a1c4 2px solid;
+} */
+
+.speaker-name small{
+    display: block;
+    text-align: center;
+    margin-top: -40px;
+    padding: 1rem;
+    /* border: #00a1c4 2px solid; */
+}
 .speaker .app .speaker-img {
     width: 12rem;
     /* border: #dbb819 solid 2px; */
